@@ -46,6 +46,11 @@ Setup a LXDE version for a more desktop like setup
 
 Add Authentication for VNC.
 
+## Support
+
+### http://dockerteam.com for all the docker based support.
+
+
 ## Credits
 
 #### NoVNC http://kanaka.github.io/noVNC/
