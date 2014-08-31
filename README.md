@@ -41,7 +41,9 @@ apt-get commands
 ex: apt-get install libreoffice-base libreoffice-gtk libreoffice-calc
 
 ## To DO
+
 Setup a LXDE version for a more desktop like setup
+
 Add Authentication for VNC.
 
 ## Credits
