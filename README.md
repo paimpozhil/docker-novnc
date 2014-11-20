@@ -20,7 +20,7 @@ docker run -td -p 6080:6080 paimpozhil/docker-novnc
 git clone https://github.com/paimpozhil/docker-novnc.git 
 cd docker-novnc
 docker built -t novnc .
-docker run -td -p 6080:6080 paimpozhil/docker-novnc
+docker run -td -p 6080:6080 novnc
 ```
 
 Now visit 
@@ -29,7 +29,7 @@ http://kanaka.github.io/noVNC/noVNC/vnc.html
 and enter
 
 Host as your Public IP of your docker host/server.
-Post = 2222
+Post = 6080
 Leave password as blank and click connect you should see a nice display within your browser, just right click and open terminal or firefox.
 
 For access within lan / localhost : visit http://localhost:6080 or http://privateip:6080
