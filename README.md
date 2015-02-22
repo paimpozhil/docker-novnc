@@ -19,7 +19,7 @@ docker run -td -p 6080:6080 paimpozhil/docker-novnc
 #Or if you like to build yourself
 git clone https://github.com/paimpozhil/docker-novnc.git 
 cd docker-novnc
-docker built -t novnc .
+docker build -t novnc .
 docker run -td -p 6080:6080 novnc
 ```
 
