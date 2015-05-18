@@ -14,10 +14,10 @@ Especially useful if you have to give access to your friends who come over for f
 
 ## How to use
 ```
-docker run -td -p 6080:6080 paimpozhil/docker-novnc
+docker run -td -p 6080:6080 zerodivide1/docker-novnc
 
 #Or if you like to build yourself
-git clone https://github.com/paimpozhil/docker-novnc.git 
+git clone https://github.com/zerodivide1/docker-novnc.git 
 cd docker-novnc
 docker build -t novnc .
 docker run -td -p 6080:6080 novnc
@@ -43,17 +43,12 @@ apt-get commands
 
 ex: apt-get install libreoffice-base libreoffice-gtk libreoffice-calc
 
-## To DO
-
-Setup a LXDE version for a more desktop like setup
-
-Add Authentication for VNC.
-
 ## Support
 
-### http://dockerteam.com for all the docker based support.
+* http://docker.com for all the docker based support.
 
 
 ## Credits
 
-#### NoVNC http://kanaka.github.io/noVNC/
+* [NoVNC](http://kanaka.github.io/noVNC/)
+* [Original docker-novnc project](https://github.com/paimpozhil/docker-novnc)
