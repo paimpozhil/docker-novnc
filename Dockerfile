@@ -1,19 +1,10 @@
 FROM ubuntu:trusty
-MAINTAINER Sean Payne <seantpayne+docker@gmail.com>
-
+MAINTAINER paimpozhil@gmail.com
+RUN apt-get update -y
 ENV DEBIAN_FRONTEND noninteractive
-
+RUN apt-get install -y git x11vnc wget python python-numpy unzip Xvfb firefox openbox geany
+RUN cd /root && git clone https://github.com/kanaka/noVNC.git 
 ADD startup.sh /startup.sh
-
-RUN apt-get update -y && \
-    apt-get install -y git x11vnc wget python python-numpy unzip Xvfb firefox openbox geany menu && \
-    cd /root && git clone https://github.com/kanaka/noVNC.git && \
-    cd noVNC/utils && git clone https://github.com/kanaka/websockify websockify && \
-    cd /root && \
-    chmod 0755 /startup.sh && \
-    apt-get autoclean && \
-    apt-get autoremove && \
-    rm -rf /var/lib/apt/lists/*
-
+RUN chmod 0755 /startup.sh
 CMD /startup.sh
 EXPOSE 6080
