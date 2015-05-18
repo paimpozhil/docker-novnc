@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER paimpozhil@gmail.com
+MAINTAINER Sean Payne <seantpayne+docker@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
